@@ -1,0 +1,36 @@
+.main
+  .header
+    .header__group
+      .header__group__name test
+      .header__group__member Member:masa
+    .header__edit 
+      = link_to "#" ,class:"header__edit__btn" do
+        Edit
+        
+  .messages
+    .message
+      .message__area
+        %p.message__area__user
+          masa
+        %p.message__area__time 
+          2019/11/20(wed)17:43:01
+      %p.message__text
+        おはよう！
+        
+    .message
+      .message__area
+        %p.message__area__user
+          masa
+        %p.message__area__time 
+          2019/11/20(wed)17:43:01
+      %p.message__text
+        おはよう！
+
+      
+  .form
+    .form__message
+      %input{class:"form__message__box", type:"text",placeholder:"type a message"}
+      %label{class: "form__message__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class:"form__message__image__file"}
+    %input{class: "form__btn",type: "submit"}

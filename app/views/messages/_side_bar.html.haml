@@ -1,0 +1,17 @@
+.side
+  .user
+    .user__box
+      %p.user__box__name masa
+      %ul.user__box__edit
+        %li.user__box__edit__user
+          =link_to "#", class:"user__box__edit__user__btn user__box__edit__user__btn--far" do
+            = icon("far" ,"edit")
+        %li.user__box__edit__group
+          =link_to "#" ,class:"user__box__edit__group__btn user__box__edit__group__btn--fas" do
+            = icon("fas", "cog")
+
+
+  .side__messages
+    =link_to "#", class: "side__messages__area" do
+      %p.side__messages__area__group techcamp
+      %p.side__messages__area__new まだメッセージはありません
